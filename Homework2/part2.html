@@ -13,7 +13,7 @@
             --color_7: #085F63;
             --color_8: #887575;
         }
-        a[href="about"]{
+        a[href*="about"]{
             background-color: var(--color_6);
         }
         a[href$=".html"]{
@@ -25,7 +25,7 @@
         *[data-href ]{
             background-color: var(--color_4);
         }
-        a:first-child{
+        div > a:first-child{
             background-color: var(--color_5);
         }
         [data-href~="highlight_me"]{
