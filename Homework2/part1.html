@@ -16,17 +16,21 @@
             --color_8: #887575;
         }
 
-        div:first-of-type > p:nth-child(n+2){
+        div:first-of-type > p:nth-child(n+2) {
             background-color: var(--color_1);
         }
+
         p[class="active"] + h2 {
             /* when it's class attribute you can you dot notain: .active not => class="active"] */
             background-color: var(--color_2);
         }
+
         div span ~ h2{
             background-color: var(--color_3);
         }
+
         div + h2{
+            /* this is not quite right, you should change selector, because "+" dosn't enaught */
             background-color: var(--color_4);
         }
     </style>
