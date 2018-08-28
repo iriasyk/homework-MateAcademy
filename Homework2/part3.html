@@ -19,7 +19,10 @@
         a:visited{
             background-color: var(--color_6);
         }
+        /* where is this: Highlight all links with class www with link or visited state ?) the presios 3 is not right */
+
         a:not([class~="www"]){
+            /* this is right, but better use this notion: :not(.www) = this is the same */
             background-color: var(--color_7);
         }
         a:hover{
