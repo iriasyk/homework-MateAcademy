@@ -13,13 +13,10 @@
             --color_7: #085F63;
             --color_8: #887575;
         }
-        a:link{
-            background-color: var(--color_6);
+        .www:link, .www:visited {
+          color: var(--color_6);
         }
-        a:visited{
-            background-color: var(--color_6);
-        }
-        a:not([class~="www"]){
+        a:not(.www){
             background-color: var(--color_7);
         }
         a:hover{
