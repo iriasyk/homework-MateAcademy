@@ -14,6 +14,7 @@
             --color_8: #887575;
         }
         a[href="about"]{
+            /* in your case Highlight links that only have href that is equal to "about", in task there was "that follow" => it means that contains "about" text: fix */
             background-color: var(--color_6);
         }
         a[href$=".html"]{
@@ -26,6 +27,7 @@
             background-color: var(--color_4);
         }
         a:first-child{
+            /* add here the rule that link is inside some parent */
             background-color: var(--color_5);
         }
         [data-href~="highlight_me"]{
