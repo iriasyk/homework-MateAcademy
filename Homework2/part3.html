@@ -16,7 +16,7 @@
         .www:link, .www:visited {
           color: var(--color_6);
         }
-        a:not(.www){
+        a:active:not(.www){
             background-color: var(--color_7);
         }
         a:hover{
@@ -25,7 +25,7 @@
         [type="checkbox"]:checked + label{
             text-decoration: underline;
         }
-        [type = text]:focus{
+        input[type = text]:focus{
             border: 1px solid blue;
         }
         input[required]{
