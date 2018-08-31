@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Homework3</title>
+    <style>
+        .text-header{
+            font-size: 21px;
+            font-family: Gabriola Regular;
+        }
+        .container-header-main{
+            background-color: #ff5c33;
+            width: 100%;
+            height: 65px;
+            position: absolute;
+            left: 50%;
+            top: 5%;
+            transform: translate(-50%, -50%);
+        }
+        div.parent{
+            float: left;
+            display:table;
+            width:305px;
+            height: 65px;
+            padding-left: 340px;
+        }
+        div.text{
+            vertical-align:middle;
+            display:table-cell;
+            text-align:justify;
+            float: left;
+            padding: 18px 0px 0px 3px;
+            text-decoration: underline;
+        }
+        div.parent .img{
+            vertical-align:middle;
+            display:table-cell;
+            padding-right:5px;
+            width:50px;
+        }
+        div.img img{
+            width:68px;
+            height:58px;
+            vertical-align:middle;
+        }
+        .submenu{
+            float: left;
+        }
+        nav {
+            margin-left: 160px;
+            background-color: #333333;
+        }
+        nav ul {
+            padding: 4px 20px 16px 2px;
+            margin:0;
+            list-style: none;
+            position: relative;
+        }
+        nav ul li {
+            padding-top: 10px;
+            display:inline-block;
+            background-color: #333333;
+        }
+        nav a {
+            display:block;
+            color:#FFF;
+            line-height: 34px;
+            text-decoration:none;
+            padding-left: 18px;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+        }
+
+        /* отображаем выпадающий список при наведении */
+        nav ul li:hover > ul {
+            display:inherit;
+        }
+
+        /* первый уровень выпадающего списка */
+        nav ul ul li {
+            padding-right: -50px;
+            min-width:180px;
+            float:none;
+            display:list-item;
+            position: relative;
+            right: 4px;
+            top: -15px;
+        }
+
+        .container-header-little-four{
+            float: left;
+            color: #ffffff;
+            margin-left: 25px;
+            padding-top: 7px;
+            text-decoration: none;
+        }
+        .container-section-main{
+            float: left;
+            width: 960px;
+            height: 65px;
+            position: absolute;
+            left: 50%;
+            top: 5%;
+            transform: translate(-50%, -50%);
+            padding: 140px 0px 0px 0px;
+        }
+        .section-heading{
+            font-family: Gabriola Regular;
+            font-size: 41px;
+            color: #fe470f;
+            margin-bottom: 65px;
+        }
+        .icon-one{
+            position: relative;
+            left: 50%;
+            top: 5%;
+            transform: translate(-50%, -50%);
+        }
+        .part2-block-one{
+            float: left;
+            margin-left: 145px;
+
+        }
+        .part2-block-two{
+            float: left;
+            margin-left: 175px;
+        }
+        .part2-block-three{
+            float: left;
+            margin-left: 175px;
+            margin-right: 145px;
+        }
+        .button-section-one{
+        color: white;
+        height: inherit;
+        border: none;
+        background-color: #fe470f;
+        max-width: 175px;
+        width: 100%;
+        font-size: 21px;
+        font-family: Gabriola Regular;
+        }
+        .text-in-button{
+            color: white;
+            text-decoration: none;
+        }
+        .icon-one{
+            margin-bottom: -50px;
+        }
+        .container-section-two-main{
+            float: left;
+            float: left;
+            width: 960px;
+            height: 65px;
+            position: absolute;
+            left: 59%;
+            top: 465px;
+            transform: translate(-50%, -50%);
+        }
+        .big-text-one{
+            float: left;
+            margin-right: 165px;
+            line-height: 18px;
+        }
+        .big-text-two{
+            line-height: 18px;
+        }
+        .button-top{
+            padding: 675px 0px 0px 1060px;
+        }
+        .container-footer{
+            float: left;
+            background-color: #ff5c33;
+            width: 100%;
+            height: 45px;
+            position: absolute;
+            left: 50%;
+            top: 113%;
+            transform: translate(-50%, 0%);
+        }
+        .footer-p-one{
+            float: left;
+            padding-left: 350px;
+            color: white;
+        }
+        .footer-p-two{
+            float: left;
+            margin-left: 280px;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-header-main">
+            <div class="parent">
+                <div class="img">
+                    <a href="#"><img src="img/Без-имени-1.png"/></a>
+                </div>
+                <div class="text text-header">
+                    One more site
+                </div>
+            </div>
+
+            <div class="submenu text-header">
+                <nav>
+                    <ul>
+                        <li><a href="#">MAIN</a>
+                            <!-- уровень выпадающего списка -->
+                            <ul>
+                                <li><a href="#">1. Main</a></li>
+                                <li><a href="#">2. Second main</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="container-header-little-four">
+                <a href="#" class="text-header container-header-little-four">CONTACTS</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container-section-main">
+            <div class="section-heading">
+                <p align="center">Our Insights</p>
+            </div>
+            <div class="part2-block-one">
+                <img src='img/Без-имени-2.png' alt="icon-1" class="icon-one">
+                <p align="center" class=text-header">Lorem ipsum sir<br> dolor amed</p>
+                <button type="button" class="button-section-one"><a href="#" class="text-in-button">Details</a></button>
+            </div>
+
+            <div class="part2-block-two">
+                <img src='img/Без-имени-3.png' alt="icon-2" class="icon-one">
+                <p align="center" class=text-header">Lorem ipsum sir<br> dolor amed</p>
+                <button type="button" class="button-section-one"><a href="#" class="text-in-button">Details</a></button>
+            </div>
+
+            <div class="part2-block-three">
+                <img src='img/Без-имени-4.png' alt="icon-3" class="icon-one">
+                <p align="center" class=text-header">Lorem ipsum sir<br> dolor amed</p>
+                <button type="button" class="button-section-one"><a href="#" class="text-in-button">Details</a></button>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container-section-two-main">
+            <div class="big-text-one text-header">
+                <p>Lorem ipsum sir dolor amed Lorem ipsum<br>
+                    sir dolor amed Lorem ipsum sir dolor am<br>
+                    Lorem ipsum sir dolor amed Lorem ipsum<br>
+                    sir dolor amed med Lorem ipsum sir dolor<br>
+                    Lorem ipsum sir dolor amed Lorem ipsum<br>
+                    dolor amed Lorem med Lorem ipsum sir<br>
+                    ipsum sir dolor amed Lorem ipsum sir dol<br>
+                    amed Lorem ipsum sir dolor amed amed<br>
+                    Lorem ipsum sir dolor amed Lorem ipsum<br>
+                    dolor amed Lorem ipsum sir dolor amed</p>
+            </div>
+            <div class="big-text-two text-header">
+                <p>Lorem ipsum sir dolor amed Lorem ipsum<br>
+                    sir dolor amed Lorem ipsum sir dolor am<br>
+                    Lorem ipsum sir dolor amed Lorem ipsum<br>
+                    sir dolor amed med Lorem ipsum sir dolor<br>
+                    Lorem ipsum sir dolor amed Lorem ipsum<br>
+                    dolor amed Lorem med Lorem ipsum sir<br>
+                    ipsum sir dolor amed Lorem ipsum sir dol<br>
+                    amed Lorem ipsum sir dolor amed amed<br>
+                    Lorem ipsum sir dolor amed Lorem ipsum<br>
+                    dolor amed Lorem ipsum sir dolor amed</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="button-top">
+            <a href="#" onclick="return up()"><img src="img/Без-имени-5.png"/></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <div class="footer-p-one text-header">
+                <p align="center">2018 Mate Academy</p>
+            </div>
+            <div class="footer-p-two text-header">
+                <p align="center">Created by one more awesome developer</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
