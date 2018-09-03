@@ -1,0 +1,246 @@
+body {
+    font-family: Gabriela;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+.container-main{
+    max-width: 690px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.heading{
+    background-color: #ff5c33;
+}
+.container-with-logo-text{
+    height: 65px;
+}
+.img-logo{
+    padding-top: 3px;
+    width: 70px;
+    height: 60px;
+}
+.container-logo{
+    float:left;
+}
+.text-heading{
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-top: 23px;
+    float: left;
+}
+ol{
+    display: none;
+    margin-top: 18px;
+    margin-left: -22px;
+    position: absolute;
+    background-color: #333333;
+}
+
+.nav {
+    float: right;
+    margin-right: 5px;
+    position: relative;
+    top: -23px;
+    font-size: 21px;
+    font-weight: bold;
+    left: 10px;
+}
+
+.nav li {
+    float: left;
+    list-style: none;
+    padding: 22px 22px 19px 22px;
+    text-transform: uppercase;
+}
+
+.nav li:hover{
+    background-color: #333333;
+}
+.nav li:hover>ol{
+    display: block;
+}
+.nav ol>li{
+    float: none;
+    padding: 18px 40px 0px 0px;
+    color: #fff;
+    list-style: decimal inside;
+    text-transform: capitalize;
+    margin-left: -17px;
+}
+.nav ol>li:last-child{
+    padding-bottom: 16px;
+}
+.nav li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav li > ol > li:hover{
+    text-decoration: underline;
+}
+.container-middle-main{
+    background-color: #ffffff;
+    margin-top: 90px;
+}
+.heading-h1 > h1{
+    color: #fe470f;
+    font-size: 41px;
+    font-weight: bold;
+}
+.img-with-text{
+    float: left;
+    text-align: center;
+}
+.img-with-text:nth-child(n+1):nth-child(-n+2){
+    margin-right: 100px;
+}
+.img-with-text > h2{
+    font-size: 21px;
+    color: #333333;
+}
+.indent{
+    margin-top: 55px;
+}
+.btn{
+    background-color: #fe470f;
+    padding-top: 13.5px;
+    padding-bottom: 13.5px;
+}
+.btn:hover{
+    background-color: #333333;
+}
+.btn > a{
+    color: #ffffff;
+    font-size: 21px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.second-text{
+    float: left;
+    margin-top: 39px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+}
+.second-text:nth-child(1){
+    margin-right: 45px;
+}
+.btn-bottom{
+    padding: 0px 0px 0px 1265px;
+}
+.footer{
+    position: relative;
+    margin-top: 25px;
+    background-color: #ff5c33;
+    color: #fff;
+    padding-top: 13px;
+    padding-bottom: 9px;
+    height: 22px;
+}
+.footer-content{
+    padding-left: 30px;
+}
+.footer-content > span{
+    font-size: 21px;
+    font-weight: 400;
+    float: left;
+}
+.footer-content > span:last-child{
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    float: right;
+    margin-right: 20px;
+}
+
+@media screen  and (min-width: 300px) and (max-width: 690px){
+    .nav ol{
+        overflow: hidden;
+    }
+    .nav ol>li{
+        padding-top: 40px;
+    }
+    .container-main{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .container-main > span{
+        display: none;
+    }
+    .container-main > img {
+        width: 46px;
+        height: 40px;
+        margin-top: 11px;
+        margin-left: 100px;
+    }
+    .text-heading{
+        display: none;
+    }
+    .nav{
+        position: static;
+    }
+    .nav li {
+        margin-top: -23px;
+        float: left;
+        list-style: none;
+        text-transform: uppercase;
+    }
+    .heading{
+        position: relative;
+    }
+    ol{
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+    .container-middle-main{
+        padding-top: 20px;
+    }
+    .indent> .img-with-text{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+    .heading-h1>h1{
+        font-size: 35px;
+        margin-bottom: 21px;
+        margin-top: -10px;
+    }
+    .indent{
+        width: calc(100% - 100px);
+        margin: 0 auto;
+    }
+    .block-text{
+        width: calc(100% - 100px);
+        margin: 0 auto;
+    }
+    .block-text> .second-text{
+        float: none;
+        width: 100%;
+        padding: 5px;
+    }
+    .btn{
+        font-size: 21px;
+        width: 176px;
+        padding: 13px 0;
+        margin: 17px auto 45px;
+    }
+    .btn-bottom{
+        display: none;
+        padding-left: 0px !important;
+    }
+    .footer-content > span:last-child{
+        margin-top: 17px;
+        margin-right: 10px;
+    }
+    .footer{
+        height: 60px;
+    }
+}
