@@ -47,7 +47,7 @@
     z-index: 1;
 }
 
-@media (min-device-width: 320px) and (max-device-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
     div.first > .colored{
         float: left;
         width: calc(50% - 2px);
@@ -58,7 +58,7 @@
     }
 }
 
-@media (min-device-width: 768px) and (max-device-width: 959px) {
+@media (min-width: 768px) and (max-width: 959px) {
     div.first > .colored{
         float: left;
         width: calc(50% - 2px);
@@ -86,7 +86,7 @@
 
 }
 
-@media (min-device-width: 960px) and (max-device-width: 1199px) {
+@media (min-width: 960px) and (max-width: 1199px) {
     div.first > .colored{
         float: left;
         width: calc(50% - 2px);
@@ -117,7 +117,7 @@
         float: left;
     }
 }
-@media (min-device-width: 960px) and (max-device-width: 1799px) {
+@media (min-width: 960px) and (max-width: 1799px) {
     div.four > .colored{
         width: calc(35% - 2px);
         float: left;
@@ -126,7 +126,7 @@
         width: calc(30% - 2px);
     }
 }
-@media (min-device-width: 1200px) and (max-device-width: 1799px) {
+@media (min-width: 1200px) and (max-width: 1799px) {
     div.first > .colored{
         float: left;
         width: calc(50% - 2px);
@@ -154,8 +154,8 @@
         width: calc((100% / 3) - 2px);
         float: left;
     }
-}
-@media (min-device-width: 1800px) {
+
+@media (min-width: 1800px) {
     div.first > .colored {
         float: left;
         width: calc((100% /4) - 2px);
