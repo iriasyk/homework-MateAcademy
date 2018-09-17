@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.background{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    transform: rotate(-10deg);
+    padding-left: 440px;
+}
+.container-one{
+    width: 800px;
+    height: 300px;
+    background-color: darkgray;
+    border-radius: 15px;
+    margin: 0 auto;
+    transform: rotate(-10deg);
+}
+.container-two{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    background-color: white;
+    width: 760px;
+    height: 260px;
+
+}
+.container-two > p{
+    padding: 10px 0px 0px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+.container-two > p:nth-child(1){
+    font-weight: bold;
+}
+#img{
+    position: absolute;
+    top: 18%;
+    left: 72%;
+}
+.circle{
+    border-radius: 50%;
+    border: 2px solid red;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -13%;
+    left: 98%;
+}
+.x{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
