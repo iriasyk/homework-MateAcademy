@@ -1,0 +1,95 @@
+@media (min-device-width: 300px) and (max-device-width: 1100px){
+    .heading{
+        width: 100%;
+        height: auto;
+    }
+    .bottom-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 28%;
+    }
+    .wrapper{
+        width: 70%;
+        height: auto;
+    }
+    .logo-txt{
+        padding: 10px 0px 0px 0px;
+    }
+    .logo-txt a{
+        font-size: 100px;
+    }
+    .list-heading{
+        font-size: 40px;
+        padding: 0px 0px 0px 0px;
+    }
+    .txt-heading{
+        font-size: 80px;
+        padding: 0px 0px 0px 0px;
+    }
+    .heading-bottom {
+        width: 600px;
+        padding-top: 0px;
+    }
+    .txt-heading-bottom{
+        font-size: 25px;
+    }
+    .bottom-button{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .bottom-button > button{
+        height: 100px;
+        width: 460px;
+        font-size: 30px;
+    }
+    .container1-with-display-flex{
+        display: block;
+    }
+    .container1-with-display-flex > div{
+        padding-bottom: 50px;
+    }
+    .container1-with-display-flex > div > h3{
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    .container1-with-display-flex > div > p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .container1-with-display-flex > div > hr{
+        width: 350px;
+        
+    }
+    .img-mobile{
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .container2-with-display-flex > .for-button  > button{
+        height: 70px;
+        width: 200px;
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+    .container-four > .wrapper > div > button{
+        height: 70px;
+        width: 200px;
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+    .container-four-with-display-flex > div > button{
+        height: 70px;
+        width: 200px;
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+    .container-five-with-display-flex > div > button{
+        height: 70px;
+        width: 200px;
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+
+}
