@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: dimgray;
+}
+
+.box {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    animation: rot 2s infinite linear;
+}
+@keyframes rot {
+    from {
+        transform: rotate(0deg)
+        translate(-150px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-150px)
+        rotate(-360deg);
+    }
+}

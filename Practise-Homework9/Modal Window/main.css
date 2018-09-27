@@ -1,0 +1,89 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("img/magicheskie-gory.jpg");
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper{
+    position: absolute;
+    /*left: 35%;*/
+    /*top: 10%;*/
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 560px;
+    background-color: black;
+    opacity: 0.8;
+    animation: modal 5s ease-out;
+    animation-delay: 4s;
+
+}
+@keyframes modal {
+    50%{
+        top: 350px;
+    } 100%{
+          top: 350px;
+      }
+}
+.main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#img{
+    position: relative;
+    top: 45px;
+    left: 25%;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.input > div > input:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid dimgray;
+    color: #fff;
+}
+.in{
+    width: 300px;
+}
+.input > div:nth-child(1){
+    padding-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.input > div:nth-child(2){
+    margin-left: 20px;
+}
+button{
+    background-color: deeppink;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    position: absolute;
+    top: 70%;
+    left: 39%;
+    color: #fff;
+    font-size: 20px;
+}
+.footer{
+    color: dimgray;
+    position: absolute;
+    top: 81%;
+    left: 21%;
+}
+.footer > a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer > a:hover{
+    text-decoration: underline;
+}
