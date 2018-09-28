@@ -1,1 +1,1 @@
-https://iriasyk.github.io/homework-MateAcademy/Maquette-Elena/index2.html
+https://iriasyk.github.io/homework-MateAcademy/blob/optimization/Maquette-Elena/index2.html
