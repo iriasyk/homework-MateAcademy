@@ -1,1 +1,1 @@
-https://iriasyk.github.io/homework-MateAcademy/Practise-Homework6/FlexBoxes/index.html
+https://iriasyk.github.io/homework-MateAcademy/Practise5/FlexBoxes/index.html
