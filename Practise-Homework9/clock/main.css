@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: blanchedalmond;
+}
+.wrapper{
+    padding: 200px 0px 0px 530px;
+}
+.clock{
+    position: relative;
+    width: 225px;
+    height: auto;
+}
+
+.line{
+    background-color: red;
+    height: 108px;
+    width: 4px;
+    position: fixed;
+    top: 31.2%;
+    left: 46.9%;
+    animation: line 60s;
+    transform-origin: 50% 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60, end);
+
+
+}
+@keyframes line {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
