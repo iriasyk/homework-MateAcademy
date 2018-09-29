@@ -1,0 +1,200 @@
+body{
+  font-family: $fontFamily;
+}
+
+.taskList {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  color: $textColor;
+  &-TLines{
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 90px);
+    transform: translate(-50% ,-50%);
+    width: 3px;
+    height: 241px;
+    border-right: 1px solid $verticalLinesColor;
+    border-left: 1px solid $verticalLinesColor;
+  }
+  &-wrapper {
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 251px;
+    height: 241px;
+    box-shadow: 0 5px 5px -5px gray;
+    background: #fff;
+    border: 1px solid $mainBorderColor;
+    &__previous:enabled,
+    &__next:enabled{
+      position: relative;
+      top: 205px;
+      padding: 3px 5px;
+      line-height: 20px;
+      outline: 0;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      color: $textColor;
+    }
+    &__previous:disabled,
+    &__next:disabled{
+      background: none;
+      color: #d7d8da;
+    }
+    &__previous{
+      background: none;
+      left: 50px;
+      cursor: not-allowed;
+      color: #d7d8da;
+    }
+    &__next{
+      left: 100px;
+    }
+    &__next:active{
+      background: $verticalLinesColor;
+    }
+    &__next:hover{
+      cursor: pointer;
+    }
+    &-clone1{
+      z-index: 3;
+      position: absolute;
+      left: 50%;
+      top: calc(50% + 106px);
+      transform: translate(-50% ,-50%);
+      width: 248px;
+      height: 40px;
+      box-shadow: 0 5px 5px -5px gray;
+      background: #fff;
+    }
+    &-clone2{
+      z-index: 2;
+      position: absolute;
+      top: calc(50% + 110px);
+      left: 50%;
+      transform: translate(-50% ,-50%);
+      width: 239px;
+      height: 40px;
+      box-shadow: 0 5px 5px -5px gray;
+      background: #fff;
+    }
+    &-clone3{
+      z-index: 1;
+      position: absolute;
+      top: calc(50% + 114px);
+      left: 50%;
+      transform: translate(-50% ,-50%);
+      width: 230px;
+      height: 40px;
+      box-shadow: 0 5px 5px -5px gray;
+      background: #fff;
+    }
+  }
+
+  &-item,&-itemInterface {
+    padding: 4px 10px;
+    list-style: none;
+    width: calc(100% - 20px);
+    border-bottom: 1px solid $mainBorderColor;
+    input[type=checkbox]{
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      opacity: 0;
+
+      &:checked ~ .taskList-item__text {
+        text-decoration: line-through;
+      }
+      &:checked + .taskList-item__checkbox {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        background: #fff;
+        border: none;
+        border: 1px solid $textColor;
+      }
+      & + .taskList-item__checkbox:before {
+        content: '';
+        margin-right: 6px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        vertical-align: text-top;
+        background: white;
+      }
+      &:checked + .taskList-item__checkbox:after {
+        content:  '\2713 ';
+        position: absolute;
+        left: 3px;
+        top: -3px;
+        width: 0px;
+        height: 0px;
+        transform: rotate(360deg);
+        background: white;
+      }
+    }
+
+    &__checkbox {
+      float: left;
+      display: inline-block;
+      top: -2px;
+      width: 17px;
+      height: 17px;
+      border: 1px solid $borderColor;
+    }
+
+    &__text {
+      @include fontSize(12);
+    }
+  }
+  &-itemInterface{
+    margin-top: -10px;
+    &__button{
+      margin-left: 10px;
+      border: none;
+      background: none;
+      outline: 0;
+      color: $textColor;
+    }
+    &__button:hover{
+      cursor: pointer;
+    }
+    &__button:hover::after {
+      content: attr(data-title);
+      z-index: 6;
+      position: absolute;
+      top: -18%;
+      padding: 5px;
+      border-radius: 3px;
+      font-weight: bold;
+      background: #333;
+      color: #fff;
+    }
+    #addTask:hover::after{
+      left: 15%;
+    }
+    #deleteTask:hover::after{
+      left: 22%;
+    }
+    #settings:hover::after{
+      left: 72%;
+    }
+
+    #addTask{
+      font-weight: bold;
+    }
+    #settings{
+      float: right;
+      margin-right: 15px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task List</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="taskList-wrapper">
+    <ul class="taskList">
+        <li class="taskList-itemInterface">
+            <input type="checkbox" id="taskList-item0" >
+            <label class="taskList-item__checkbox" for="taskList-item0"></label>
+            <button class="taskList-itemInterface__button" id="addTask" data-title="Add Task">+</button>
+            <button class="taskList-itemInterface__button" id="deleteTask" data-title="Delete Task"><i class="fas fa-trash-alt"></i></button>
+            <button class="taskList-itemInterface__button" id="settings" data-title="Settings"><i class="fas fa-cog"></i></button>
+        </li>
+        <li class="taskList-item">
+            <input type="checkbox" id="taskList-item1" >
+            <label class="taskList-item__checkbox" for="taskList-item1"></label>
+            <span class="taskList-item__text">
+    Play soccer with friends
+  </span>
+        </li>
+        <li class="taskList-item">
+            <input type="checkbox" id="taskList-item2" checked="checked">
+            <label class="taskList-item__checkbox" for="taskList-item2"></label>
+            <span class="taskList-item__text">
+    Open Photoshop
+  </span>
+        </li>
+        <li class="taskList-item">
+            <input type="checkbox" id="taskList-item3" >
+            <label class="taskList-item__checkbox" for="taskList-item3"></label>
+            <span class="taskList-item__text">
+    Finish client work
+  </span>
+        </li>
+        <li class="taskList-item">
+            <input type="checkbox" id="taskList-item4" checked="checked">
+            <label class="taskList-item__checkbox" for="taskList-item4"></label>
+            <span class="taskList-item__text">
+    Give away some PSDs
+  </span>
+        </li>
+        <li class="taskList-item">
+            <input type="checkbox" id="taskList-item5">
+            <label class="taskList-item__checkbox" for="taskList-item5"></label>
+            <span class="taskList-item__text">
+    Post a new shot to Dribbble
+  </span>
+        </li>
+
+    </ul>
+    <button class="taskList-wrapper__previous"><i class="fas fa-chevron-circle-left" disabled></i> Previous</button>
+    <button class="taskList-wrapper__next">Next <i class="fas fa-chevron-circle-right"></i></button>
+</div>
+<div class="taskList-TLines"></div>
+<div class="taskList-wrapper-clone1"></div>
+<div class="taskList-wrapper-clone2"></div>
+<div class="taskList-wrapper-clone3"></div>
+
+</body>
+</html>

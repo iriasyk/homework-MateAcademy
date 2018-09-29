@@ -1,0 +1,18 @@
+$baseSize: 16;
+
+@mixin fontSize($size: 14) {
+  font-size: ($size / $baseSize) + rem;
+}
+
+%greyBorder {
+  border: 1px solid $mainBorderColor;
+}
+
+@mixin randomColorGenerate($count: 6) {
+  @for $i from 1 through $count {
+    h#{$i} {
+      color: #ffcc1 + #{$i};
+      font-size: (24 - $i) + px;
+    }
+  }
+}
