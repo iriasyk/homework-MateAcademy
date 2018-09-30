@@ -1,0 +1,44 @@
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+svg {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+.animation {
+    width: 0px;
+    x: 50%;
+    y: 0;
+    height: 100%;
+    transition: all .5s;
+}
+.animation--pink {
+    fill: deeppink;
+}
+.animation--purple {
+    fill: purple;
+}
+svg:hover .animation {
+    x: 0;
+    width: 100%;
+}
+.text {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .5s;
+}
+.text--pink {
+    fill: deeppink;
+}
+.text--purple {
+    fill: purple;
+}
+svg:hover .text {
+    fill: white;
+}

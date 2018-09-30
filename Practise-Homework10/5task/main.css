@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+}
+.wrapper > svg{
+    margin-right: 50px;
+}
+.text {
+    font: 45px sans-serif;
+    fill: black;
+    opacity: 0.4;
+}
+.animation {
+    stroke-dashoffset: 439;
+    stroke-dasharray: 439;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+.animation-30 {
+    animation: anm30 3s ease infinite;
+}
+.animation-60 {
+    animation: anm60 3s ease infinite;
+}
+.animation-90 {
+    animation: anm90 3s ease infinite;
+}
+
+@keyframes anm30{
+    to {
+        stroke-dashoffset: 310;
+    }
+}
+@keyframes anm60{
+    to {
+        stroke-dashoffset: 155;
+    }
+}
+@keyframes anm90{
+    to {
+        stroke-dashoffset: 77.5;
+    }
+}
