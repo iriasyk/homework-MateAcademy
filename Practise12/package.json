@@ -1,0 +1,19 @@
+{
+  "name": "practise12",
+  "version": "1.0.0",
+  "description": "add npm install",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch src/core/style.scss -o dist/main.css"
+  },
+  "author": "IGOR <riasik123400@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

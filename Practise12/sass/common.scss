@@ -1,0 +1,30 @@
+@import "variables";
+@import "settings";
+@import "mixin";
+
+body,html{
+  font-family: $fontFamily;
+  font-size: $mainSize;
+}
+
+.task2{
+  background-color: antiquewhite;
+  button{
+    background-color: $buttonBackColor;
+  }
+  button:hover{
+    background-color: $buttonBackActiveColor;
+  }
+  button:focus{
+    background-color: #0000FF;
+  }
+}
+.tasks3__wrapper {
+  background-color: $backColor;
+}
+.tasks3__wrapper2 .tasks__list .tasks__item {
+  font-size: 18px;
+  color: white;
+  background-color: #c0c0c0;
+}
+

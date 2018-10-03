@@ -1,0 +1,42 @@
+body, html{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+.task2{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  button{
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+  }
+}
+.tasks3__wrapper{
+  width: 100%;
+  height: auto;
+}
+.tasks__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.tasks__list .tasks__item {
+  text-align: center;
+  padding: 10px 10px;
+}
+.tasks3__wrapper2 .tasks__list {
+  font-size: 0;
+}
+.tasks3__wrapper2 .tasks__list .tasks__item {
+  display: inline-block;
+  width: 33.33%;
+  padding: 10px 0px 10px 0px;
+}

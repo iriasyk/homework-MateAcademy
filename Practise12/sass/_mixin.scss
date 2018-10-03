@@ -1,0 +1,6 @@
+@for $i from 1 through 6 {
+  .rules__item:nth-child(#{$i}) {
+    font-size: 12px + $i;
+    color: rgb(random(255),random(255),random(255));
+  }
+}
