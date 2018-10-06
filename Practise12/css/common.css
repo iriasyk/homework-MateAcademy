@@ -70,32 +70,32 @@ body, html {
 
 .rules__item:nth-child(1) {
   font-size: 13px;
-  color: #a11c52;
+  color: #e68d0a;
 }
 
 .rules__item:nth-child(2) {
   font-size: 14px;
-  color: #6374c8;
+  color: #8ed604;
 }
 
 .rules__item:nth-child(3) {
   font-size: 15px;
-  color: #3b58c9;
+  color: #6360f5;
 }
 
 .rules__item:nth-child(4) {
   font-size: 16px;
-  color: #640c9e;
+  color: #7f0a8b;
 }
 
 .rules__item:nth-child(5) {
   font-size: 17px;
-  color: #bdd8d9;
+  color: #6278c7;
 }
 
 .rules__item:nth-child(6) {
   font-size: 18px;
-  color: #dbf9f7;
+  color: #9e5ee1;
 }
 
 .ladder-item:nth-child(1) {
