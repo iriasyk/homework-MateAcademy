@@ -1,6 +1,10 @@
 @import "variables";
 @import "settings";
 @import "mixin";
+@import "maps";
+@import "ladder";
+@import "table";
+@import "buttons";
 
 body,html{
   font-family: $fontFamily;
@@ -27,4 +31,78 @@ body,html{
   color: white;
   background-color: #c0c0c0;
 }
+.MainBlocks{
+  height: auto;
+  &__children > div{
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    margin-top: 8px;
+    font-size: $blocksFS;
+  }
+  &__children > div:nth-child(1){
+    background: map-get($bgsForMaps, success);
+    height: map-get($most, most-height);
+  }
+  &__children > div:nth-child(2){
+    background: map-get($bgsForMaps, information);
+    height: map-get($most, less-height);
+  }
+  &__children > div:nth-child(3){
+    background: map-get($bgsForMaps, alert);
+    height: map-get($most, most-height);
+  }
+  &__children > div:nth-child(4){
+    background: map-get($bgsForMaps, oops);
+    height: map-get($most, most-height);
+  }
+  &__children > div:nth-child(5){
+    height: map-get($most, footer-block-height);
+  }
+  &__children > div:nth-child(5) > b{
+    color: black;
+  }
+  &__children > div:nth-child(5) > p{
+    margin-top: 3px;
+    color: red;
+  }
+  &__children > div > div{
+    float: left;
+  }
+  &__children > div > div:nth-child(1){
+    margin-right: 8px;
+  }
+  &__children > div{
+    padding: 15px;
+  }
+}
 
+.ladder {
+  display: inline-block;
+  font-size: 0px;
+  width: 302px;
+  height: 300px;
+  border-left: 2px solid rgb(204, 153, 255);
+  border-bottom: 2px solid rgb(204, 153, 255);
+}
+table {
+  margin: 0 auto;
+  td{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+  }
+}
+
+.buttons {
+  display: block;
+  margin: 0 auto;
+  width: 1180px;
+  height: 100px;
+  button {
+    width: 75px;
+    display: inline-block;
+  }
+}

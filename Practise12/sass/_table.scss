@@ -1,0 +1,21 @@
+@for $i from 1 through 12{
+  @if ($i % 2 != 0) {
+    td:nth-child(#{$i}){
+      background: yellow;
+    }
+  }@else if ($i % 2 == 0){
+    td:nth-child(#{$i}){
+      background: blue;
+    }
+  }
+  @if ($i % 5 == 0){
+    td:nth-child(#{$i}){
+      background: black;
+    }
+  }
+  @else if ($i % 8 == 0){
+    td:nth-child(#{$i}){
+      background: green;
+    }
+  }
+}

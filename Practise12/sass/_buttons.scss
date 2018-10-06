@@ -1,0 +1,22 @@
+@import "maps";
+@each $class, $color in $bgs {
+  .#{$class} {
+    background: $color;
+  }
+}
+@for $i from 1 through 16{
+  @if ($i == 3 ) {
+    .buttons button:nth-child(#{$i}){
+      height: map-get($sizes, small);
+    }
+  }@else if ($i % 2 == 0){
+    .buttons button:nth-child(#{$i}){
+      height: map-get($sizes, medium);
+    }
+  }@else{
+    .buttons button:nth-child(#{$i}){
+      height: map-get($sizes, big);
+    }
+  }
+
+}

@@ -1,0 +1,83 @@
+.success {
+  background: #22ff00;
+}
+
+.warning {
+  background: #e6ff00;
+}
+
+.info {
+  background: #d4e3ee;
+}
+
+.default {
+  background: #4b0ec6;
+}
+
+.error {
+  background: red;
+}
+
+.buttons button:nth-child(1) {
+  height: 90px;
+}
+
+.buttons button:nth-child(2) {
+  height: 60px;
+}
+
+.buttons button:nth-child(3) {
+  height: 40px;
+}
+
+.buttons button:nth-child(4) {
+  height: 60px;
+}
+
+.buttons button:nth-child(5) {
+  height: 90px;
+}
+
+.buttons button:nth-child(6) {
+  height: 60px;
+}
+
+.buttons button:nth-child(7) {
+  height: 90px;
+}
+
+.buttons button:nth-child(8) {
+  height: 60px;
+}
+
+.buttons button:nth-child(9) {
+  height: 90px;
+}
+
+.buttons button:nth-child(10) {
+  height: 60px;
+}
+
+.buttons button:nth-child(11) {
+  height: 90px;
+}
+
+.buttons button:nth-child(12) {
+  height: 60px;
+}
+
+.buttons button:nth-child(13) {
+  height: 90px;
+}
+
+.buttons button:nth-child(14) {
+  height: 60px;
+}
+
+.buttons button:nth-child(15) {
+  height: 90px;
+}
+
+.buttons button:nth-child(16) {
+  height: 60px;
+}

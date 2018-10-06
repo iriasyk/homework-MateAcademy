@@ -1,0 +1,24 @@
+$most: (
+        footer-block-height: 80px,
+        most-height: 40px,
+        less-height: 25px,
+        color: white
+);
+$bgsForMaps: (
+        success: rgb(0, 153, 51),
+        information: rgb(102, 204, 255),
+        alert: rgb(255, 153, 51),
+        oops: rgb(255, 80, 80)
+);
+$sizes: (
+        small: 40px,
+        medium: 60px,
+        big: 90px
+);
+$bgs: (
+        success: rgb(34, 255, 0),
+        warning: rgb(230, 255, 0),
+        info: rgb(212, 227, 238),
+        default: rgb(75, 14, 198),
+        error: rgb(255, 0, 0)
+);
