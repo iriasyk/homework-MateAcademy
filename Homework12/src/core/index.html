@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Core for login-page</title>
+    <link rel="stylesheet" href="../../dist/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="parent">
+        <div class="wrapper">
+            <div class="wrapper__account">
+                {% include "src/tmp/account.html" %}
+            </div>
+
+            <div class="wrapper__registration">
+                {% include "src/tmp/registration.html" %}
+            </div>
+            <div class="wrapper__cookie">
+                {% include "src/tmp/cookie.html" %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,241 @@
+@import "settings";
+@import "variables";
+@import "fonts";
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  //align-content: stretch;
+  flex-wrap: wrap;
+  &__account{
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 50px;
+    width: $widthForMainBlocks;
+    height: $heightAuto;
+  }
+  &__registration{
+    margin-top: 40px;
+    margin-right: 60px;
+    width: $widthForMainBlocks;
+    height: $heightAuto;
+    form > .socialBlockFooter{
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+      width: 100%;
+      .child3{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 65%;
+        font-size: 13px;
+        margin-bottom: 10px;
+        input{
+          width: 15%;
+        }
+        > button{
+          display: block;
+          background-color: $buttonColor;
+          font-weight: bold;
+          cursor: pointer;
+          border: none;
+          border-radius: 2px;
+          color: white;
+          width: 60%;
+          height: 30px;
+          font-size: 20px;
+        }
+      }
+      .child4{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 62.5%;
+        input{
+          width: 15%;
+        }
+        > button{
+          display: block;
+          background-color: $buttonColor;
+          font-weight: bold;
+          cursor: pointer;
+          border: none;
+          border-radius: 2px;
+          color: white;
+          width: 60%;
+          height: 30px;
+          font-size: 20px;
+        }
+      }
+      .child div:nth-child(1){
+        margin-left: -10px;
+        margin-right: 20px;
+      }
+      .child{
+        display: flex;
+        justify-content: stretch;
+        width: 60%;
+      }
+      > textarea{
+        width: 60%;
+        border: 1px solid #cecece;
+        background-color: #F6F6f6;
+        border-radius: 8px;
+        outline: none;
+        padding: 6px 0 4px 10px;
+      }
+      > p{
+        width: 35%;
+      }
+      > input{
+        width: 60%;
+        height: $heightInput;
+      }
+    }
+    form > .socialBlock{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        width: 100%;
+        > p{
+          width: 35%;
+        }
+        > input{
+          width: 60%;
+          height: $heightInput;
+        }
+    }
+    form > .socialBlock2{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      margin-bottom: 20px;
+      width: 100%;
+      > input{
+        text-align: center;
+      }
+      .input1{
+        width: 8%;
+      }
+      .input2{
+        width: 8%;
+      }
+      .input3{
+        width: 12%;
+      }
+      > select{
+        background: #fafafa;
+        border-radius: 3px;
+        border: 1px solid #d3d3d3;
+        padding: 5px;
+        color: #656565;
+      }
+    }
+    form > .socialBlock3{
+      width: 100%;
+      > input{
+        width: 6%;
+      }
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  }
+  form{
+    .country{
+      width: 100%;
+    }
+    .child2{
+      display: flex;
+      justify-content: flex-start;
+      align-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .logIn{
+      display: flex;
+      justify-content: space-between;
+      width: 93%;
+      button{
+        background-color: $backGroundButton;
+        cursor: pointer;
+        color: white;
+        width: 40%;
+        height: $heightAuto;
+        font-size: 20px;
+        border: none;
+        border-radius: 4px;
+        margin-top: 30px;
+      }
+      > p{
+        margin-top: 35px;
+      }
+      > p > a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .hrText{
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      hr{
+        width: 30%;
+        height: 1px;
+        color: $hrColor;
+      }
+      div{
+        padding-top: 10px;
+      }
+    }
+    div{
+      margin-top: -10px;
+    }
+  }
+  .button{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    button {
+      background: #405b92;
+      padding: 5px 20px;
+      cursor: pointer;
+      color: white;
+      border-radius: 3px;
+      border: none;
+    }
+    button:first-child {
+      background: #32b1d4;
+    }
+    button:last-child {
+      background: #cb442e;
+    }
+  }
+}
+input{
+  width: 90%;
+  height: $heightInput;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background-color: #F6F6f6;
+  border-radius: 8px;
+  outline: none;
+}
+.wrapper__cookie > p > a{
+  text-decoration: none;
+  color: #32b1d4;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.wrapper__cookie > p:nth-child(2){
+  text-align: center;
+}
