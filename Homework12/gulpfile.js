@@ -1,8 +1,7 @@
 // 'use strict';
-var gulp = require('gulp'); // Подключаем Gulp
-var sass = require('gulp-sass'); // Подключаем Sass пакет
+var gulp = require('gulp');
+var sass = require('gulp-sass');
 var watch = require('gulp-watch');
-// var csso = require('gulp-csso');
 const nunjucksRender = require('gulp-nunjucks-render');
 let cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
@@ -38,8 +37,7 @@ gulp.task('watch', function() {
     gulp.watch(['src/core/scss/**/*.scss'], ['sass']); // Наблюдение за sass файлами в папке sass
 });
 
-// gulp.task('default', ['watch'], function () {
-//     return gulp.src('dist/css/main.css')
-//         .pipe(csso())
-//         .pipe(gulp.dest('dist/css'));
-// });
+gulp.task('default',  function () {
+    return gulp.src('dist/css/main.css')
+        .pipe(gulp.dest('dist/css'));
+});
