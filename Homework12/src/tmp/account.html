@@ -1,9 +1,15 @@
 <form>
     <h2>My Account Login</h2>
     <p>Username</p>
-    <div><input type="text"/></div>
+    <div class="accountInput1">
+        <input type="text" required/>
+        <span><i class="fas fa-user"></i></span>
+    </div>
     <p>Password</p>
-    <div><input type="password"/></div>
+    <div>
+        <input type="password" required/>
+        <span><i class="fas fa-lock"></i></span>
+    </div>
     <div class="logIn">
         <button>Log in</button>
         <p><a href="#">Forgot password?</a></p>
@@ -13,10 +19,9 @@
         <div>Or Sign in With</div>
         <hr align="right">
     </div>
-    <div class="button">
-        <button>Twitter</button>
-        <button>Facebook</button>
-        <button>Google+</button>
-    </div>
 </form>
-
+<div class="button">
+    <button><span class="socials__link_icon"><i class="fab fa-twitter"></i></span>Twitter</button>
+    <button><span class="socials__link_icon"><i class="fab fa-facebook-f"></i></span>Facebook</button>
+    <button><span class="socials__link_icon"><i class="fab fa-google-plus-g"></i></span>Google+</button>
+</div>
