@@ -154,6 +154,7 @@
         width: calc((100% / 3) - 2px);
         float: left;
     }
+}
 
 @media (min-width: 1800px) {
     div.first > .colored {
